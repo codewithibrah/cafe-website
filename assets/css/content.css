@@ -1,0 +1,285 @@
+/* banner info */
+.banner-info{
+    display: flex;
+    background: url("../images/slider-image2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 350px;
+}
+
+.banner-info .title-l{ color: var(--white);}
+
+.banner-info .container{
+    line-height: 2.3;
+}
+
+
+@media screen and (max-width: 768px) {
+    .banner-info .container{
+        text-align: center;
+        line-height: 1.3;
+    }
+
+    .banner-info .title-l{
+        margin: 20px 0;
+    }
+}
+
+
+
+
+
+/* about us section */
+.about-us__section{
+    background: var(--white);
+    padding: 50px 0;
+}
+
+.about-us__section .container{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+}
+
+.about-us__section img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.about-us__section .text-wrapper p:last-child{margin-top: 15px;}
+
+
+@media screen and (max-width: 768px){
+    .about-us__section .container{
+        grid-template-columns: auto;
+    }
+}
+ 
+
+
+
+/* chef section */
+.chef__section{
+    padding: 50px 0;
+}
+
+.chef__section .center-content{
+    margin: 50px 0;
+}
+
+.chef__section .column{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 20px;
+}
+
+
+.chef__section .card img{
+    width: 100%;
+    transition: all .3s linear;
+    height: 400px;
+    object-fit: cover; 
+}
+
+.chef__section .card{
+    position: relative;
+    overflow: hidden;
+}
+
+.chef__section .card-info{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--black);
+    color: var(--white);
+    font-size: 19px;
+    padding: 10px;
+    left: 0;
+    width: 100%;
+    bottom: -120px;
+    overflow: hidden;
+    transition: all .3s linear;
+}
+
+.chef__section .card:hover .card-info{
+    bottom: 30px;
+}
+
+.chef__section .card:hover img{
+    transform: scale(1.2);
+    opacity: 0.6;
+}
+
+.chef__section .telegram-link{ 
+    color: var(--green);
+    font-weight: bold;
+}
+
+.chef__section .card i{
+    font-size: 30px;
+}
+
+
+@media screen and (max-width: 992px) {
+    .chef__section .column{
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .chef__section .column{
+        grid-template-columns: auto;
+    }
+}
+
+
+
+
+
+
+/* menu section */
+.menu__section{
+    background-color: var(--white);
+    padding: 50px 0;
+}
+
+.menu__section .center-content{
+    margin: 50px 0;
+}
+
+
+.menu__section .menu-section__card{
+    position: relative;
+    overflow: hidden;
+}
+
+.menu__section img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    transition: all .3s linear;
+}
+
+.menu-section__card .card-info{
+    background: #000000;
+    color: var(--white);
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.menu-section__card p{
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.menu__section .column{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 20px;
+}
+
+.menu-section__card:hover img{
+    transform: scale(1.2);
+}
+
+@media screen and (max-width: 992px) {
+    .menu__section .column{
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu__section .column{
+        grid-template-columns: auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* contact section */
+.contact__section{
+    padding: 50px 0;
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-control{
+    border: none;
+    background: none;
+    outline: none;
+    border-bottom: 1px solid var(--gray);
+    padding: 5px;
+    font-size: 16px;
+}
+
+.form-control:focus{
+    border-color: var(--green);
+}
+
+form button{
+    width: 100%;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+/* footer */
+footer{
+    padding: 50px 0;
+    background-color: var(--black);
+    color: var(--white);
+    font-size: 16px;
+}
+
+footer .title-m{
+     color: var(--white);
+     margin: 10px 0;
+}
+
+footer .container{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+}
+
+footer .link{color: var(--white);}
+
+
+@media screen and (max-width: 992px) {
+    footer .container{
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    footer .container{
+        grid-template-columns: auto;
+    }
+}
+
